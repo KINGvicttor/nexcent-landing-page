@@ -1,27 +1,25 @@
 import nexcentLogo from "../assets/img/nexcent-logo.png"
 
 export const Header = () => {
-    return(
-        <header className="w-full h-[84px] text-black bg-white">
-            <div className="container mx-auto w-full h-[84px] flex justify-between items-center">
-                <div className="w-[154px] h-[40px] flex items-center">
-                    <img src={nexcentLogo.src} />
+    return( 
+        <header className="w-[1440px] h-[84px] text-black bg-gray-100">
+            <div className="container mx-auto h-[84px] flex justify-between items-center">
+                <div className="w-[154px] h-[24px]">
+                    <img src={nexcentLogo.src} alt="nexcent logo" />
                 </div>
-                <div className="w-[588px] h-[40px]">
-                    <nav>
-                        <ul className="w-full h-[40px] flex justify-between items-center">
-                            <li className="text-lg border-b-4 border-green-500 cursor-pointer">Home</li>
-                            <li className="text-lg border-b-4 border-transparent hover:border-green-500 cursor-pointer">Service</li>
-                            <li className="text-lg border-b-4 border-transparent hover:border-green-500 cursor-pointer">Feature</li>
-                            <li className="text-lg border-b-4 border-transparent hover:border-green-500 cursor-pointer">Product</li>
-                            <li className="text-lg border-b-4 border-transparent hover:border-green-500 cursor-pointer">Testimonial</li>
-                            <li className="text-lg border-b-4 border-transparent hover:border-green-500 cursor-pointer">FAQ</li>
-                        </ul>
-                    </nav>
+                <div className="w-[588px] h-[24px]">
+                    <ul className="flex justify-between">
+                        <a href="" className="font-semibold border-b-4 border-transparent hover:border-primary"><li>Home</li></a>
+                        <a href="" className="font-semibold border-b-4 border-transparent hover:border-primary"><li>Service</li></a>
+                        <a href="" className="font-semibold border-b-4 border-transparent hover:border-primary"><li>Feature</li></a>
+                        <a href="" className="font-semibold border-b-4 border-transparent hover:border-primary"><li>Product</li></a>
+                        <a href="" className="font-semibold border-b-4 border-transparent hover:border-primary"><li>Testimonial</li></a>
+                        <a href="" className="font-semibold border-b-4 border-transparent hover:border-primary"><li>FAQ</li></a>
+                    </ul>
                 </div>
-                <div className="w-[170px] h-[40px] flex items-center">
-                    <button className="w-[77px] h-[40px] text-green-500 rounded-lg">Login</button>
-                    <button className="w-[91px] h-[40px] bg-green-500 text-white rounded-lg">Sign up</button>
+                <div className="w-[182px] h-[40px] flex justify-between">
+                    <button className="w-[77px] h-[40px] rounded-lg text-primary cursor-pointer">Login</button>
+                    <button className="w-[91px] h-[40px] rounded-lg text-white bg-primary cursor-pointer">Sign up</button>
                 </div>
             </div>
         </header>
